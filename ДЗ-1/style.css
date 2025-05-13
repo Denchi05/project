@@ -1,0 +1,244 @@
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #212121;
+    line-height: 1.5;
+  }
+
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    color: #000;
+  }
+  
+  .gallery {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    
+  }
+  /* .gallery .gallery-grid{
+   
+    max-width: 1200px;
+    align-items: center;
+
+
+  } */
+
+  .gallery-grid {
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .order {
+    background: #1d102b;
+    padding: 60px 20px;
+    
+    text-align: center;
+    position: relative;
+  }
+  
+  .order-box {
+    
+    max-width: 1000px;
+    max-height: 394px;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    bottom: 70px;
+  }
+  .order-box form{
+    max-width: 780px;
+    display: flex;
+    margin: 70px 0 70px 0;
+    margin-left: 10%;
+    max-height: 127px;
+  }
+  
+  .order-box input {
+    height: 80px;
+    width: 380px;
+    padding: 12px;
+
+    border: 1p  x solid #ccc;
+    border-radius: 6px;
+    padding-right: 20px;
+    bottom: 70px;
+
+  }
+  .order .order-box h2{
+    font-size: 2em;
+    margin-bottom: 5px;
+
+  }
+  .order-box button {
+    height: 80px;
+    width: 380px;
+    padding: 12px 20px;
+    background-color: #ffd500;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .input-with-icon {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+  }
+  
+  .input-with-icon .icon {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .input-with-icon input {
+   
+    padding: 12px 12px 12px 50px; /* добавляем отступ слева */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #0e061a;
+    font-size: 14px;
+  }
+
+  /* Сброс отступов и шрифты */
+
+
+  /* Контейнер и заголовок */
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  .wrapper h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  /* Сетка карточек */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  /* Оформление одной карточки */
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-content .info {
+    margin-bottom: 20px;
+  }
+  .card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+  .card-content p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .btn {
+    background-color: #FFD600;
+    color: #212121;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .btn:hover {
+    background-color: #FFCA28;
+  }
+  @media (max-width: 600px) {
+    .card img {
+      height: 150px;
+    }
+  }
+  .gallery_h{
+    text-align: center;
+
+  }
+
+  .wrapper p{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .site-footer {
+    background-color: #0e061a;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
